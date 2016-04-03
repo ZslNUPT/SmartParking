@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyInfoItemInterView">
+        <attr name="iconSrc" format="reference" />
+        <attr name="iconSize" format="dimension" />
+        <attr name="iconBackground" format="reference|color" />
+        <attr name="functionText" format="reference|string" />
+        <attr name="functionTextSize" format="integer" />
+        <attr name="functionTextColor" format="reference|color" />
+        <attr name="updateFlag" format="boolean" />
+    </declare-styleable>
+</resources>

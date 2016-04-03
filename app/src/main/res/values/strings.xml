@@ -3,4 +3,16 @@
     <string name="tab_my">我的信息</string>
     <string name="tab_main">首頁</string>
 
+    <!--myInfo view-->
+    <string name="myInfo_title">我的</string>
+    <string name="myInfo_infoRatio">简历完成度 </string>
+    <string name="myInfo_parking_history">停车记录</string>
+    <string name="myInfo_message">我的消息</string>
+    <string name="myInfo_collection">我的收藏</string>
+    <string name="myInfo_feedback">意见反馈</string>
+    <string name="myInfo_setting">系统设置</string>
+    <string name="myInfo_quit">退出当前账号</string>
+    <string name="toast_not_support">您的手机不支持此功能</string>
+
+
 </resources>

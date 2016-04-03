@@ -1,17 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="我的信息"
-        android:layout_centerInParent="true"
-        android:gravity="center"
-        android:textSize="@dimen/font_large"
-        android:padding="@dimen/spacing_8"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
 
-        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/myInfo_head_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/normal_white">
+
+                <ImageView
+                    android:id="@+id/head_photo"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@color/dark_blue"
+                    android:layout_margin="16dp" />
+
+                <LinearLayout
+                    android:id="@+id/mid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/head_photo"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/myInfo_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/normal_black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/myInfo_ratio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="请登录"
+                        android:textColor="@color/normal_black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <com.njupt.sniper.smartparking.common.IconTextView
+                    android:id="@+id/right_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/text_icon_arrow_right"
+                    android:textColor="@color/delivery_text_color"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+            <com.njupt.sniper.smartparking.common.MyInfoItemInterView
+                android:id="@+id/myinfo_send_history"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/myInfo_head_layout"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="8dp"
+                app:functionText="@string/myInfo_parking_history"
+                app:functionTextColor="@color/normal_black"
+                app:functionTextSize="14"
+                app:iconBackground="@color/myInfo_send_history"
+                app:iconSize="32dp"
+                app:iconSrc="@drawable/myinfo_send_history"
+                app:updateFlag="false" />
+
+            <com.njupt.sniper.smartparking.common.MyInfoItemInterView
+                android:id="@+id/myInfo_message"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/myinfo_send_history"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:paddingLeft="8dp"
+                app:functionText="@string/myInfo_message"
+                app:functionTextColor="@color/normal_black"
+                app:functionTextSize="14"
+                app:iconBackground="@color/myInfo_message"
+                app:iconSize="32dp"
+                app:iconSrc="@drawable/myinfo_message"
+                app:updateFlag="false" />
+
+            <com.njupt.sniper.smartparking.common.MyInfoItemInterView
+                android:id="@+id/myInfo_collection"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/myInfo_message"
+                android:layout_marginTop="1dp"
+                android:clickable="true"
+                android:paddingLeft="8dp"
+                app:functionText="@string/myInfo_collection"
+                app:functionTextColor="@color/normal_black"
+                app:functionTextSize="14"
+                app:iconBackground="@color/myInfo_collection"
+                app:iconSize="32dp"
+                app:iconSrc="@drawable/myinfo_collection"
+                app:updateFlag="false" />
+
+            <com.njupt.sniper.smartparking.common.MyInfoItemInterView
+                android:id="@+id/myInfo_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/myInfo_collection"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:paddingLeft="8dp"
+                app:functionText="@string/myInfo_feedback"
+                app:functionTextColor="@color/normal_black"
+                app:functionTextSize="14"
+                app:iconBackground="@color/myInfo_feedback"
+                app:iconSize="32dp"
+                app:iconSrc="@drawable/myinfo_feedback"
+                app:updateFlag="false" />
+
+            <com.njupt.sniper.smartparking.common.MyInfoItemInterView
+                android:id="@+id/myInfo_setting"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/myInfo_feedback"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="8dp"
+                app:functionText="@string/myInfo_setting"
+                app:functionTextColor="@color/normal_black"
+                app:functionTextSize="14"
+                app:iconBackground="@color/myInfo_setting"
+                app:iconSize="32dp"
+                app:iconSrc="@drawable/myinfo_setting"
+                app:updateFlag="false" />
+        </RelativeLayout>
+
+    </ScrollView>
+
 
 </RelativeLayout>

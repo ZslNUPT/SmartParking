@@ -4,6 +4,21 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <!--MyInfo view-->
+    <color name="myInfo_item_press">#80ffffff</color>
+    <color name="myInfo_progress_done">#7fccff</color>
+    <color name="myInfo_send_history">#569fec</color>
+    <color name="myInfo_enterprise_test">#ffbb32</color>
+    <color name="myInfo_message">#4adab3</color>
+    <color name="myInfo_collection">#fe4d5f</color>
+    <color name="myInfo_feedback">#ff554b</color>
+    <color name="myInfo_setting">#62c371</color>
+    <color name="myInfo_update_red">#ff0000</color>
+    <color name="myInfo_quit">#3497da</color>
+    <color name="myInfo_quit_press">#318ecc</color>
+    <color name="delivery_text_color">#8a8a8a</color>
+
+
     <!-- 常用蓝色 -->
     <color name="lightest_blue">#f0f9ff</color>
     <color name="lighter_blue">#80d4f8</color>
