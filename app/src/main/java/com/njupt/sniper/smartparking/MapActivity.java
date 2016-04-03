@@ -15,8 +15,10 @@ import com.baidu.mapapi.map.BitmapDescriptor;
 import com.baidu.mapapi.map.BitmapDescriptorFactory;
 import com.baidu.mapapi.map.MapStatusUpdateFactory;
 import com.baidu.mapapi.map.MapView;
+import com.baidu.mapapi.map.MarkerOptions;
 import com.baidu.mapapi.map.MyLocationConfiguration;
 import com.baidu.mapapi.map.MyLocationData;
+import com.baidu.mapapi.map.OverlayOptions;
 import com.baidu.mapapi.model.LatLng;
 
 /**
@@ -30,7 +32,6 @@ public class MapActivity extends AppCompatActivity {
 
     private TextView tv_location_data;
     private Button btn_request_location;
-
 
 
     public BDLocationListener myListener = new MyLocationListener() {
@@ -49,8 +50,8 @@ public class MapActivity extends AppCompatActivity {
         mMapView = (MapView) findViewById(R.id.bmapView);
         mBaiduMap = mMapView.getMap();
 
-        tv_location_data= (TextView) findViewById(R.id.tv_location_data);
-        btn_request_location= (Button) findViewById(R.id.btn_request_location);
+        tv_location_data = (TextView) findViewById(R.id.tv_location_data);
+        btn_request_location = (Button) findViewById(R.id.btn_request_location);
         btn_request_location.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -64,7 +65,7 @@ public class MapActivity extends AppCompatActivity {
         initLocation();
 
         mLocationClient.start();
-     //   mLocationClient.requestLocation();// 发起定位请求
+        //   mLocationClient.requestLocation();// 发起定位请求
 
     }
 
@@ -88,11 +89,11 @@ public class MapActivity extends AppCompatActivity {
         BitmapDescriptor mCurrentMarker = BitmapDescriptorFactory
                 .fromResource(R.drawable.icon_geo);
         //构建MarkerOption，用于在地图上添加Marker
-        //OverlayOptions option = new MarkerOptions()
-        // .position(latlng)
-        // .icon(bitmap);
+        OverlayOptions option = new MarkerOptions()
+                .position(latlng)
+                .icon(mCurrentMarker);
         //在地图上添加Marker，并显示
-        //baiduMap.addOverlay(option);
+        mBaiduMap.addOverlay(option);
 
         //配置定位图层显示方式(显示模式（普通，罗盘，跟随）)
         // mode - 定位图层显示方式, 默认为 LocationMode.NORMAL 普通态
