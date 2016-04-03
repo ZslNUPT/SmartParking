@@ -3,4 +3,54 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!-- 常用蓝色 -->
+    <color name="lightest_blue">#f0f9ff</color>
+    <color name="lighter_blue">#80d4f8</color>
+    <color name="light_blue">#7fccff</color>
+    <color name="normal_blue">#40b2ff</color>
+    <color name="dark_blue">#3497da</color>
+    <color name="darker_blue">#2196f3</color>
+    <color name="darkest_blue">#297fb8</color>
+
+    <!-- 常用黑白色（灰色） -->
+    <color name="transparent">#00000000</color>
+
+    <color name="normal_white">#ffffff</color>
+    <color name="lightest_grey">#f8f8f8</color>
+    <color name="lighter_grey">#dedede</color>
+    <color name="normal_grey">#cccccc</color>
+    <color name="normal_grey_1">#9d9d9d</color>
+    <color name="dark_grey">#8a8a8a</color>
+    <color name="normal_black">#333333</color>
+    <color name="dark_black">#242424</color>
+    <color name="darkest_black">#000000</color>
+
+
+    <!-- 常用黄色（橙色） -->
+    <color name="light_yellow">#ffcd42</color>
+    <color name="normal_yellow">#ffbc34</color>
+    <color name="dark_yellow">#f9ba48</color>
+    <color name="darker_yellow">#f99622</color>
+    <color name="normal_orange">#ea7732</color>
+
+    <!-- 常用红色 -->
+    <color name="normal_pink">#ff6a7c</color>
+    <color name="normal_red">#fc5238</color>
+    <color name="dark_red">#e82727</color>
+
+    <!-- 常用绿色 -->
+    <color name="lighter_green">#9cce24</color>
+    <color name="normal_green">#62c371</color>
+    <color name="grass_green">#7fb42f</color>
+    <color name="darker_green">#52b31e</color>
+    <color name="dark_green">#79ac74</color>
+
+    <!-- 蓝绿色  -->
+    <color name="normal_cyan">#4adab3</color>
+    <color name="dark_cyan">#34daa9</color>
+
+    <color name="list_divider_top">#E2E2E2</color>
+    <color name="list_divider_bottom">#FFFFFF</color>
+    <color name="transparent_gray">#C0808080</color>
 </resources>
