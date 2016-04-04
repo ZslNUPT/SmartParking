@@ -13,6 +13,7 @@ import com.baidu.location.LocationClientOption;
 import com.baidu.mapapi.map.BaiduMap;
 import com.baidu.mapapi.map.BitmapDescriptor;
 import com.baidu.mapapi.map.BitmapDescriptorFactory;
+import com.baidu.mapapi.map.MapStatusUpdate;
 import com.baidu.mapapi.map.MapStatusUpdateFactory;
 import com.baidu.mapapi.map.MapView;
 import com.baidu.mapapi.map.MarkerOptions;
@@ -104,6 +105,11 @@ public class MapActivity extends AppCompatActivity {
 
         //设置我的位置为地图的中心点
         mBaiduMap.animateMapStatus(MapStatusUpdateFactory.newLatLng(latlng));
+
+        MapStatusUpdate u = MapStatusUpdateFactory.zoomTo(16);
+        mBaiduMap.animateMapStatus(u);
+        mLocationClient.stop();
+
     }
 
 
@@ -123,7 +129,7 @@ public class MapActivity extends AppCompatActivity {
         option.SetIgnoreCacheException(false);//可选，默认false，设置是否收集CRASH信息，默认收集
         option.setEnableSimulateGps(false);//可选，默认false，设置是否需要过滤gps仿真结果，默认需要
         mLocationClient.setLocOption(option);
-    }
+}
 
     @Override
     protected void onDestroy() {
