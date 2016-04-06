@@ -49,6 +49,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".common.SimpleWebViewActivity"/>
+
         <activity android:name=".MapActivity"/>
 
         <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">

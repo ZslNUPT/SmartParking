@@ -13,6 +13,13 @@ import android.widget.TextView;
 
 import com.baidu.mapapi.SDKInitializer;
 import com.njupt.sniper.smartparking.utils.ToastUtils;
+import com.nostra13.universalimageloader.cache.memory.impl.LruMemoryCache;
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
+import com.nostra13.universalimageloader.core.decode.BaseImageDecoder;
+import com.nostra13.universalimageloader.core.download.BaseImageDownloader;
 
 public class HomeActivity extends AppCompatActivity {
     private FragmentTabHost mTabHost;
@@ -42,6 +49,20 @@ public class HomeActivity extends AppCompatActivity {
         tabContainer=  findViewById(R.id.th_tabs);
         initTabs();
         tabContainer.setVisibility(View.VISIBLE);
+
+        ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(this)
+                .memoryCacheExtraOptions(480, 800) // default = device screen dimensions 内存缓存文件的最大长宽
+                .threadPriority(Thread.NORM_PRIORITY - 2) // default 设置当前线程的优先级
+                .tasksProcessingOrder(QueueProcessingType.FIFO) // default
+                .denyCacheImageMultipleSizesInMemory()
+                .memoryCache(new LruMemoryCache(2 * 1024 * 1024)) //可以通过自己的内存缓存实现
+                .memoryCacheSize(2 * 1024 * 1024)  // 内存缓存的最大值
+                // default为使用HASHCODE对UIL进行加密命名， 还可以用MD5(new Md5FileNameGenerator())加密
+                .imageDownloader(new BaseImageDownloader(this)) // default
+                .imageDecoder(new BaseImageDecoder()) // default
+                .defaultDisplayImageOptions(DisplayImageOptions.createSimple()) // default
+                .build(); //开始构建
+        ImageLoader.getInstance().init(config);
     }
 
     private void initTabs() {
