@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">停车易</string>
+    <string name="app_name">easyParking</string>
     <string name="tab_my">我的信息</string>
     <string name="tab_main">首頁</string>
 
@@ -13,6 +13,5 @@
     <string name="myInfo_setting">系统设置</string>
     <string name="myInfo_quit">退出当前账号</string>
     <string name="toast_not_support">您的手机不支持此功能</string>
-
 
 </resources>

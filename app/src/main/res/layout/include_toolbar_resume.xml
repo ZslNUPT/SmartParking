@@ -12,14 +12,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.hithinksoft.noodles.mobile.stu.ui.mypage.newResume.custom.LeftIconTextView
+        <com.njupt.sniper.smartparking.common.LeftIconTextView
             android:id="@+id/up_title"
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/spacing_large"
+            android:layout_height="@dimen/spacing_16"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            app:leftIcon="@string/resume_icon_back"
             app:rightStr="我的" />
+        <!--app:leftIcon="@string/resume_icon_back"-->
 
         <TextView
             android:id="@+id/current_title"

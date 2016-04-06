@@ -109,8 +109,8 @@ public class MapActivity extends AppCompatActivity implements View.OnClickListen
         mBaiduMap.setOnMarkerClickListener(new BaiduMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
-                ParkingDialogFragment p=ParkingDialogFragment.newInstance(parkingLocationEntities.get(marker.getZIndex()));
-                p.setGuideListener(new ParkingDialogFragment.GuideListener() {
+                ParkingDialogFragment parkingDialogFragment=ParkingDialogFragment.newInstance(parkingLocationEntities.get(marker.getZIndex()),mLatLng);
+                parkingDialogFragment.setGuideListener(new ParkingDialogFragment.GuideListener() {
 
                     @Override
                     public void guide(LatLng latLng) {
@@ -120,7 +120,7 @@ public class MapActivity extends AppCompatActivity implements View.OnClickListen
                                 .from(stNode).to(enNode));
                     }
                 });
-                p.show(getSupportFragmentManager(),"ParkingDialogFragment");
+                parkingDialogFragment.show(getSupportFragmentManager(),"ParkingDialogFragment");
                 return false;
             }
         });
@@ -286,12 +286,6 @@ public class MapActivity extends AppCompatActivity implements View.OnClickListen
 //        //构建Marker图标
         BitmapDescriptor mCurrentMarker = BitmapDescriptorFactory
                 .fromResource(R.drawable.icon_geo);
-
-//        OverlayOptions option = new MarkerOptions()
-//                .position(latlng)
-//                .title("我的位置")
-//                .icon(mCurrentMarker);
-//        mBaiduMap.addOverlay(option);
 
         OverlayOptions textOption = new TextOptions()
                 .bgColor(0xAAFFFF00)

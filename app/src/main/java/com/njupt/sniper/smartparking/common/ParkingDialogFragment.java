@@ -12,6 +12,7 @@ import android.view.Window;
 import android.widget.TextView;
 
 import com.baidu.mapapi.model.LatLng;
+import com.baidu.mapapi.utils.DistanceUtil;
 import com.njupt.sniper.smartparking.R;
 import com.njupt.sniper.smartparking.model.ParkingLocationEntity;
 
@@ -30,14 +31,16 @@ public class ParkingDialogFragment extends DialogFragment {
     private GuideListener guideListener;
 
     private ParkingLocationEntity parkingLocationEntity;
+    private LatLng myLocation;
 
     public void setGuideListener(GuideListener guideListener) {
         this.guideListener = guideListener;
     }
 
-    public static ParkingDialogFragment newInstance(ParkingLocationEntity parkingLocationEntity) {
+    public static ParkingDialogFragment newInstance(ParkingLocationEntity parkingLocationEntity, LatLng myLocation) {
         ParkingDialogFragment callDialogFragment = new ParkingDialogFragment();
         callDialogFragment.parkingLocationEntity = parkingLocationEntity;
+        callDialogFragment.myLocation = myLocation;
         return callDialogFragment;
     }
 
@@ -58,15 +61,19 @@ public class ParkingDialogFragment extends DialogFragment {
         address = (TextView) view.findViewById(R.id.address);
         guide = (TextView) view.findViewById(R.id.btn_guide);
 
-        title.setText("停车场" + (parkingLocationEntity.getId()+1));
-        nub.setText("剩余停车位"+parkingLocationEntity.getNub());
-       // distance.setText("");
+        title.setText("停车场" + (parkingLocationEntity.getId() + 1));
+        nub.setText("剩余停车位" + parkingLocationEntity.getNub());
+
+        final LatLng parkingLatLng = new LatLng(parkingLocationEntity.getxLocation(), parkingLocationEntity.getyLocation());
+
+
+        distance.setText("距离：" +(int) DistanceUtil.getDistance(myLocation, parkingLatLng) + "米");
         //address.setText();
 
         guide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                guideListener.guide(new LatLng(parkingLocationEntity.getxLocation(),parkingLocationEntity.getyLocation()));
+                guideListener.guide(parkingLatLng);
                 dismiss();
             }
         });

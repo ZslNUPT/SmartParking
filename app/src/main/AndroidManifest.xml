@@ -39,7 +39,7 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="7cbsQyDwIAZOeHTiw0HWC319rsCIfhlS" />
+            android:value="SmhMQQGFwteWYpsO5g4z5ejGtdv04swo" />
         <!--个人pc本地环境LN4urdEjehxTPu6cnPfoY2IaosmYUsNx-->
         <!--打包版SmhMQQGFwteWYpsO5g4z5ejGtdv04swo-->
         <!--公司pc环境7cbsQyDwIAZOeHTiw0HWC319rsCIfhlS-->
