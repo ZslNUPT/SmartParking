@@ -9,4 +9,10 @@
         <attr name="functionTextColor" format="reference|color" />
         <attr name="updateFlag" format="boolean" />
     </declare-styleable>
+
+
+    <declare-styleable name="LeftIconTextView">
+        <attr name="leftIcon" format="string|reference" />
+        <attr name="rightStr" format="string|reference" />
+    </declare-styleable>
 </resources>

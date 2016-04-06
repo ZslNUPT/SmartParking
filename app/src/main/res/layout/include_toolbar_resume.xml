@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    app:theme="@style/TitleToolBarNoodles">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.hithinksoft.noodles.mobile.stu.ui.mypage.newResume.custom.LeftIconTextView
+            android:id="@+id/up_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/spacing_large"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            app:leftIcon="@string/resume_icon_back"
+            app:rightStr="我的" />
+
+        <TextView
+            android:id="@+id/current_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的简历"
+            android:textColor="@color/normal_white"
+            android:textSize="@dimen/font_large" />
+
+        <TextView
+            android:id="@+id/action_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/spacing_16"
+            android:text="预览"
+            android:textColor="@color/normal_white"
+            android:textSize="@dimen/font_large"/>
+    </RelativeLayout>
+
+
+</android.support.v7.widget.Toolbar>

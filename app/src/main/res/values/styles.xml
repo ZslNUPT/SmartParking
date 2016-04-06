@@ -14,4 +14,18 @@
         <item name="android:layout_height">2dp</item>
         <item name="android:background">@drawable/list_divider</item>
     </style>
+
+
+    <!--The style of tool bar-->
+    <style name="TitleToolBarNoodles" parent="ToolBar.Base"></style>
+
+    <style name="ToolBar.Base" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- Actionbar color -->
+        <item name="colorPrimary">@color/dark_blue</item>
+        <item name="android:textColorPrimary">@color/normal_white</item>
+        <item name="android:actionMenuTextColor">@color/normal_white</item>
+
+    </style>
 </resources>
