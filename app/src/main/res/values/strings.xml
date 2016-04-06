@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">easyParking</string>
+
+    <!--首页tab-->
     <string name="tab_my">我的信息</string>
     <string name="tab_main">首頁</string>
 
@@ -14,4 +16,11 @@
     <string name="myInfo_quit">退出当前账号</string>
     <string name="toast_not_support">您的手机不支持此功能</string>
 
+    <!-- account preference -->
+    <string name="account_about">关于</string>
+    <string name="security_title">账号安全保护</string>
+    <string name="security_summary">您的面条账户已受安全账户机制保护</string>
+    <string name="privacy_title">隐私权</string>
+    <string name="privacy_summary">面条账户不会同步您的隐私信息</string>
+    <string name="account_type">com.njupt.sniper</string>
 </resources>
