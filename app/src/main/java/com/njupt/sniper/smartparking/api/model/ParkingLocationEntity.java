@@ -1,4 +1,4 @@
-package com.njupt.sniper.smartparking.model;
+package com.njupt.sniper.smartparking.api.model;
 
 import java.io.Serializable;
 

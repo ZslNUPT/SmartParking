@@ -14,7 +14,7 @@ import android.widget.TextView;
 import com.baidu.mapapi.model.LatLng;
 import com.baidu.mapapi.utils.DistanceUtil;
 import com.njupt.sniper.smartparking.R;
-import com.njupt.sniper.smartparking.model.ParkingLocationEntity;
+import com.njupt.sniper.smartparking.api.model.ParkingLocationEntity;
 
 
 /**

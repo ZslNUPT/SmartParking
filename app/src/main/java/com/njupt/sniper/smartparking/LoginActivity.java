@@ -27,6 +27,9 @@ public class LoginActivity extends AccountAuthenticatorActivity {
 
     private String accountType;
 
+    private static final String ENDPOINT = "http://192.168.1.6:9000";
+
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,13 +48,40 @@ public class LoginActivity extends AccountAuthenticatorActivity {
             }
         });
         mAccountManager = AccountManager.get(this);
-        accountType=getResources().getString(R.string.account_type);
+        accountType = getResources().getString(R.string.account_type);
+    }
+
+    private void requestLogin() {
+//        Retrofit retrofit = new Retrofit.Builder()
+//                .baseUrl(ENDPOINT)
+//                .addConverterFactory(GsonConverterFactory.create())
+//                .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+//                .build();
+//        ApiService apiService = retrofit.create(ApiService.class);
+//        apiService.getIpInfo("21.22.11.33")
+//                .subscribeOn(Schedulers.io())
+//                .observeOn(AndroidSchedulers.mainThread())
+//                .subscribe(new Subscriber<GetIpInfoResponse>() {
+//                    @Override
+//                    public void onCompleted() {
+//                    }
+//
+//                    @Override
+//                    public void onError(Throwable e) {
+//
+//                    }
+//
+//                    @Override
+//                    public void onNext(GetIpInfoResponse getIpInfoResponse) {
+//
+//                    }
+//                });
     }
 
     private void finishLogin() {
 
-        final Account account = new Account(mUsername,accountType );
-      //  final Account[] accounts = mAccountManager.getAccountsByType(accountType);
+        final Account account = new Account(mUsername, accountType);
+        //  final Account[] accounts = mAccountManager.getAccountsByType(accountType);
 
 
         if (mRequestNewAccount) {

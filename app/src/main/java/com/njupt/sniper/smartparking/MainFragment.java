@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import com.njupt.sniper.smartparking.common.AdvertisementPager;
 import com.njupt.sniper.smartparking.common.SimpleWebViewActivity;
-import com.njupt.sniper.smartparking.model.Banner;
+import com.njupt.sniper.smartparking.api.model.Banner;
 
 /**
  * Created by Administrator on 2016/4/3.

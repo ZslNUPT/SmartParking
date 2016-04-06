@@ -16,7 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.njupt.sniper.smartparking.R;
-import com.njupt.sniper.smartparking.model.Banner;
+import com.njupt.sniper.smartparking.api.model.Banner;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 import java.util.ArrayList;
