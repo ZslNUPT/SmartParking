@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/normal_white"
+    android:orientation="vertical">
+ <TextView
+     android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="XXXX-停车场"
+    android:padding="8dp"
+    android:textSize="16dp"
+    />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/nub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="空车位：4"
+            android:padding="8dp"
+            android:textSize="16dp"
+            />
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="距离:800m"
+            android:padding="8dp"
+            android:textSize="16dp"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文苑路一号南京邮电大学"
+        android:padding="8dp"
+        android:textSize="16dp"
+        android:layout_marginRight="16dp"
+        />
+    <TextView
+        android:id="@+id/btn_guide"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="导航"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textSize="16dp"
+        android:background="@color/lighter_green"
+        />
+
+</LinearLayout>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.njupt.sniper.smartparking">
+    package="com.njupt.sniper.smartparking" >
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.GET_TASKS" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 
     <!-- 这个权限用于进行网络定位-->
@@ -36,15 +36,12 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="7cbsQyDwIAZOeHTiw0HWC319rsCIfhlS" />
-        <!--个人pc本地环境LN4urdEjehxTPu6cnPfoY2IaosmYUsNx-->
-        <!--打包版SmhMQQGFwteWYpsO5g4z5ejGtdv04swo-->
-        <!--公司pc环境7cbsQyDwIAZOeHTiw0HWC319rsCIfhlS-->
+            android:value="LN4urdEjehxTPu6cnPfoY2IaosmYUsNx" />
 
-        <activity android:name=".HomeActivity">
+        <activity android:name=".HomeActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -52,12 +49,12 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MapActivity" />
+        <activity android:name=".common.SimpleWebViewActivity"/>
 
-        <service
-            android:name="com.baidu.location.f"
-            android:enabled="true"
-            android:process=":remote"></service>
+        <activity android:name=".MapActivity"/>
+
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
+        </service>
 
 
     </application>
