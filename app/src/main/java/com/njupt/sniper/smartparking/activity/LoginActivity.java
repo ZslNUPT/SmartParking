@@ -1,4 +1,4 @@
-package com.njupt.sniper.smartparking;
+package com.njupt.sniper.smartparking.activity;
 
 import android.accounts.Account;
 import android.accounts.AccountAuthenticatorActivity;
@@ -10,6 +10,8 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.njupt.sniper.smartparking.R;
 
 public class LoginActivity extends AccountAuthenticatorActivity {
     private String mUsername;

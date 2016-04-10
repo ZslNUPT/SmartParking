@@ -1,4 +1,4 @@
-package com.njupt.sniper.smartparking;
+package com.njupt.sniper.smartparking.activity;
 
 import android.app.Application;
 

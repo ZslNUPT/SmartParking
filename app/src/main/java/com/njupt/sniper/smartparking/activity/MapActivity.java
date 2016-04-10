@@ -1,4 +1,4 @@
-package com.njupt.sniper.smartparking;
+package com.njupt.sniper.smartparking.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -39,6 +39,7 @@ import com.baidu.mapapi.search.route.TransitRouteLine;
 import com.baidu.mapapi.search.route.TransitRouteResult;
 import com.baidu.mapapi.search.route.WalkingRouteLine;
 import com.baidu.mapapi.search.route.WalkingRouteResult;
+import com.njupt.sniper.smartparking.R;
 import com.njupt.sniper.smartparking.common.ParkingDialogFragment;
 import com.njupt.sniper.smartparking.api.model.ParkingLocationEntity;
 

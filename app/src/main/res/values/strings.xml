@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">easyParking</string>
+    <string name="app_name">停车易</string>
 
     <!--首页tab-->
     <string name="tab_my">我的信息</string>
-    <string name="tab_main">首頁</string>
+    <string name="tab_main">首页</string>
 
     <!--myInfo view-->
     <string name="myInfo_title">我的</string>

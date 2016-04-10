@@ -1,4 +1,4 @@
-package com.njupt.sniper.smartparking;
+package com.njupt.sniper.smartparking.activity;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -12,6 +12,9 @@ import android.widget.TabHost;
 import android.widget.TextView;
 
 import com.baidu.mapapi.SDKInitializer;
+import com.njupt.sniper.smartparking.R;
+import com.njupt.sniper.smartparking.fragment.MainFragment;
+import com.njupt.sniper.smartparking.fragment.PersonalFragment;
 import com.njupt.sniper.smartparking.utils.ToastUtils;
 import com.nostra13.universalimageloader.cache.memory.impl.LruMemoryCache;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
@@ -105,7 +108,7 @@ public class HomeActivity extends AppCompatActivity {
         }
 
         doubleBackToExitPressedOnce = true;
-        ToastUtils.show(this, "雙擊退出應用");
+        ToastUtils.show(this, "双击退出应用");
 
         new Handler().postDelayed(new Runnable() {
 
