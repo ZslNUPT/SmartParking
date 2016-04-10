@@ -9,12 +9,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
-/**
- * AccountAuthenticator used for Android Account Manager Framework
- *
- * @author yu_jiong
- * @since 1.0
- */
 public class AccountAuthenticator extends AbstractAccountAuthenticator {
 
 	/**

@@ -21,10 +21,6 @@ import android.os.IBinder;
 
 import static android.accounts.AccountManager.ACTION_AUTHENTICATOR_INTENT;
 
-/**
- * Authenticator service that returns a subclass of AbstractAccountAuthenticator
- * in onBind()
- */
 public class AccountAuthenticatorService extends Service {
 
     private static AccountAuthenticator AUTHENTICATOR;

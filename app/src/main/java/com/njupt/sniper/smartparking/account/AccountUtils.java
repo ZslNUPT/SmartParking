@@ -10,13 +10,6 @@ import static android.content.SharedPreferences.Editor;
 
 public class AccountUtils {
 
-
-	/**
-	 * save current account
-	 *
-	 * @param activity
-	 * @param name
-	 */
 	public static void setCurrentAccount(final Activity activity, String name) {
 		SharedPreferences accountPreference = PreferenceUtils.getAccountPreference(activity);
 		Editor editor = accountPreference.edit().putString(PreferenceUtils.CURRENT_ACCOUNT, name);

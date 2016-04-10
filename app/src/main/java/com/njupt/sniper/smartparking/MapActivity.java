@@ -48,9 +48,6 @@ import java.util.List;
 import mapapi.overlayutil.DrivingRouteOverlay;
 import mapapi.overlayutil.OverlayManager;
 
-/**
- * Created by Administrator on 2016/4/3.
- */
 public class MapActivity extends AppCompatActivity implements View.OnClickListener{
     private MapView mMapView;
     private BaiduMap mBaiduMap;

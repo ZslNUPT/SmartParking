@@ -5,10 +5,6 @@ import android.graphics.Point;
 import android.view.Display;
 import android.view.WindowManager;
 
-/**
- * @author xujiahui
- * @date 2015/8/13.
- */
 public class ScreenUtils {
 	private static int screenWidth = 0;
 	private static int screenHeight = 0;

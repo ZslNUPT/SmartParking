@@ -22,12 +22,6 @@ import android.widget.TextView;
 import com.njupt.sniper.smartparking.R;
 import com.njupt.sniper.smartparking.utils.DensityUtil;
 
-
-/**
- * This is the item view in the MyInfo view.
- *
- * Created by lmw on 2015/9/9.
- */
 public class MyInfoItemInterView extends LinearLayout{
     /**
      * the resource id of icon.

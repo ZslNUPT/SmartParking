@@ -19,9 +19,6 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Authentication constants
- */
 public class AccountConstants {
 
     private AccountConstants() {

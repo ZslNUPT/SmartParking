@@ -22,15 +22,6 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import java.util.ArrayList;
 import java.util.List;
 
-;
-
-/**
- * Introduce:This is a banner control to show sliding pictures like advertising.
- * <p/>
- * Include Views: ViewPager(To scroll the view) ImageView(To show the item number)
- * <p/>
- * Created by lmw on 2015/8/20.
- */
 public class AdvertisementPager extends RelativeLayout {
     public int MAX_SIZE = (Integer.MAX_VALUE / 2) * 2;
 

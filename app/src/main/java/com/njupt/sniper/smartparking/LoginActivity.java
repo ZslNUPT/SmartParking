@@ -11,10 +11,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-/**
- * author：Zsl
- * date：2016/4/6
- */
 public class LoginActivity extends AccountAuthenticatorActivity {
     private String mUsername;
     private String mPassword;

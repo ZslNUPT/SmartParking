@@ -18,11 +18,6 @@ import android.widget.ProgressBar;
 import com.njupt.sniper.smartparking.R;
 import com.njupt.sniper.smartparking.utils.ScreenUtils;
 
-
-/**
- * @author xujiahui
- * @date 2015/8/19.
- */
 public abstract class WebViewActivity extends ActionBarActivity {
 
 	protected ProgressBar mProgressBar;

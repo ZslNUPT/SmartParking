@@ -8,10 +8,7 @@ import android.widget.TextView;
 
 import com.njupt.sniper.smartparking.R;
 
-/**
- * author：Zsl
- * date：2016/4/6
- */
+
 public abstract class BaseToolBarActivity extends AppCompatActivity {
 
     protected Toolbar toolbar;

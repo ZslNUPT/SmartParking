@@ -6,10 +6,7 @@ import android.widget.TextView;
 
 import com.njupt.sniper.smartparking.utils.TypefaceUtils;
 
-/**
- * @author bri
- * @date 15-7-14.
- */
+
 public class IconTextView extends TextView {
     public IconTextView(Context context) {
         super(context);

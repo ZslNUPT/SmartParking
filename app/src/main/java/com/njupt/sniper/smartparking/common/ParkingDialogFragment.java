@@ -16,10 +16,6 @@ import com.baidu.mapapi.utils.DistanceUtil;
 import com.njupt.sniper.smartparking.R;
 import com.njupt.sniper.smartparking.api.model.ParkingLocationEntity;
 
-
-/**
- * Created by Zsl on 2016/3/29.
- */
 public class ParkingDialogFragment extends DialogFragment {
 
     private TextView title;

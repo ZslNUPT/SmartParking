@@ -11,10 +11,6 @@ import android.widget.TextView;
 import com.njupt.sniper.smartparking.R;
 
 
-/**
- * @author chenshenglong
- * @since 2016/2/24
- */
 public class LeftIconTextView extends RelativeLayout {
 
     protected final int SPACING_SMALLER = getResources().getDimensionPixelSize(R.dimen.spacing_4);
